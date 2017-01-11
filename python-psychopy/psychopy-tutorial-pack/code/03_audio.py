@@ -11,7 +11,7 @@ Psychopy Tutorial by Monica Li, 10-18-2016
 ### (2) change the audio library to "pygame" (otherwise the audio won't stop playing when the video stops)
 
 # set up current folder path
-parent_dir = "/Users/mli/Desktop/psychopy-tutorial/"
+parent_dir = ""
 
 # load Psychopy modules for visual stimuli, audio stimuli and clock
 from psychopy import visual, core, sound
@@ -29,7 +29,7 @@ happy_img = visual.ImageStim(win, pos = [0,0],
 
 # set up the audio stimulus you want to play
 laugh_wav = sound.SoundPyo(parent_dir + "stim/baby_laugh.wav",
-                            start = 0, stop = -1)
+                              start = 0, stop = -1)
 
 # "draw" the stimulus to "the back of" the window
 happy_img.draw()

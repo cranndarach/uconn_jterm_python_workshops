@@ -25,7 +25,7 @@ space_txt = visual.TextStim(win, text = "Please press space or ESC to proceed.",
                         color = "black",
                         height = 20,
                         font = "Arial")
-                        
+
 # "draw" the stimuli to "the back of" the window
 hello_txt.draw()
 space_txt.draw()
@@ -37,10 +37,11 @@ win.flip()
 # but won't proceed until the allocated time period is used up
 t0 = core.getTime()
 while core.getTime()-t0 <= 5:
-    resp_key = event.getKeys(keyList=["space","escape"])
-    if resp_key != []:
+    # resp_key = event.getKeys(keyList=["space","escape"])
+    # if resp_key != []:
+    if event.getKeys(keyList=["space", "escape"]):
         win.flip()
-        
+
 # # present the stimulus infinitely until a keypress is received
 # resp_key = event.waitKeys()
 # win.flip()

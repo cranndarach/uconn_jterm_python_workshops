@@ -11,7 +11,7 @@ Psychopy Tutorial by Monica Li, 10-18-2016
 ### (2) change the audio library to "pygame" (otherwise the audio won't stop playing when the video stops)
 
 # set up current folder path
-parent_dir = "/Users/mli/Desktop/psychopy-tutorial/"
+parent_dir = ""
 
 # load Psychopy modules for visual stimuli, audio stimuli and clock
 from psychopy import visual, core, sound

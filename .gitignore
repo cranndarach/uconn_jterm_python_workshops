@@ -89,3 +89,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Answers to the introduction problems
+hello.py
+numbers.py
